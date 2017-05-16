@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WordsFinal</string>
+    <string name="list_button">Lista słów</string>
+    <string name="add_button">Dodaj słowo</string>
+    <string name="game_button">Gra</string>
+</resources>
