@@ -3,4 +3,7 @@
     <string name="list_button">Lista słów</string>
     <string name="add_button">Dodaj słowo</string>
     <string name="game_button">Gra</string>
+    <string name="english_detail">Angielski:</string>
+    <string name="polish_detail">Polski;</string>
+    <string name="category_detail">Kategoria:</string>
 </resources>
