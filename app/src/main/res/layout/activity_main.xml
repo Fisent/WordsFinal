@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="lukzieniewicz.gmail.com.wordsfinal.MainActivity">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="lukzieniewicz.gmail.com.wordsfinal.MainActivity">
 
     <Button
         android:id="@+id/list_button"
@@ -13,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="128dp"
-        android:text="@string/list_button" />
+        android:text="@string/list_button"/>
 
     <Button
         android:id="@+id/add_button"
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/add_button" />
+        android:text="@string/add_button"/>
 
     <Button
         android:id="@+id/game_button"
@@ -31,7 +32,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
         android:onClick="onWordClick"
-        android:text="@string/game_button" />
+        android:text="@string/game_button"/>
 
     <TextView
         android:id="@+id/debug_text_view"
@@ -40,5 +41,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
-        android:text="TextView" />
+        android:text="TextView"/>
 </RelativeLayout>

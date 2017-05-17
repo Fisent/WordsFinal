@@ -47,7 +47,7 @@
         android:layout_alignTop="@+id/textView"
         android:layout_toRightOf="@+id/textView3"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
     <TextView
         android:id="@+id/polish_detail_label"
@@ -58,7 +58,7 @@
         android:layout_alignTop="@+id/textView2"
         android:layout_toRightOf="@+id/textView2"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
     <TextView
         android:id="@+id/category_detail_label"
@@ -69,5 +69,5 @@
         android:layout_alignTop="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 </RelativeLayout>
