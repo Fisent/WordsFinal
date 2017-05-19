@@ -19,6 +19,7 @@ import org.w3c.dom.Text;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         changeFont(l);
     }
 
+    //zajebista funkcja, przechodzi po wszystkich widokach jak po drzewie i zmienia kolor tekstu. A, i okazuje się że prawie wszystko w androidzie dziedziczy po TextView, nawet Button
     public void changeFont(View view){
         try{
             if(view instanceof ViewGroup)
@@ -85,6 +87,18 @@ public class MainActivity extends AppCompatActivity {
     public static void addWord(Word w){
         words.add(w);
         changed = true;
+    }
+
+    public void onAddWordClick(View view){
+        Intent i = new Intent(this, AddWordActivity.class);
+        System.out.println("dupa word");
+        startActivity(i);
+    }
+
+    public void onListClick(View view){
+        Intent i = new Intent(this, ListActivity.class);
+        System.out.println("dupa list");
+        startActivity(i);
     }
 
     //temporary
