@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddWordActivity extends AppCompatActivity
 {
@@ -24,13 +25,15 @@ public class AddWordActivity extends AppCompatActivity
         EditText eng = (EditText) findViewById(R.id.english_edit_text);
         EditText pol = (EditText) findViewById(R.id.polish_edit_text);
 
-        if(!eng.getText().toString().equals("") && !pol.getText().toString().equals("")){
+        if(true){
             Word w = new Word(eng.getText().toString(), pol.getText().toString());
 
             MainActivity.addWord(w);
 
             eng.setText("");
             pol.setText("");
+
+            Toast.makeText(this, "Dodano!", Toast.LENGTH_SHORT);
         }
     }
 

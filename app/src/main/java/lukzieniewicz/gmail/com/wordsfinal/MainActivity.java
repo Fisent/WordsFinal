@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         myRef.setValue("Hello, World!");
 
-        updateWords();
+        //updateWords();
+        words = new LinkedList<Word>();
 
         RelativeLayout l = (RelativeLayout)findViewById(R.id.layout);
         changeFont(l);
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-        updateWords();
+        //updateWords();
     }
 
     // connect to firebase and fetch data there
