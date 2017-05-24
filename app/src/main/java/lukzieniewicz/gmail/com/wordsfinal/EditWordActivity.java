@@ -1,11 +1,12 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 
-public class EditWordActivity extends AppCompatActivity
+public class EditWordActivity extends Activity
 {
 
     private Word current;

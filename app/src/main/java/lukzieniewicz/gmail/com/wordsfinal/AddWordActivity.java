@@ -1,5 +1,6 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AddWordActivity extends AppCompatActivity
+public class AddWordActivity extends Activity
 {
 
     @Override
@@ -16,7 +17,7 @@ public class AddWordActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_word);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
     }

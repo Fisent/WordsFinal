@@ -1,5 +1,6 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -21,7 +22,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity
+{
 
     public static LinkedList<Word> words;
     private static boolean changed = true;

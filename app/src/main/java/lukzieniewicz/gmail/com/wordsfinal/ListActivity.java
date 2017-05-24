@@ -1,5 +1,6 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,13 +14,14 @@ import android.widget.SimpleAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-public class ListActivity extends AppCompatActivity{
+public class ListActivity extends Activity
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         setList();
     }
