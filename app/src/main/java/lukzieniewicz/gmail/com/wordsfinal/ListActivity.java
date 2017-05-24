@@ -46,6 +46,17 @@ public class ListActivity extends AppCompatActivity{
                 startActivity(i);
             }
         });
+        list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
+        {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l)
+            {
+                Intent intent = new Intent(getBaseContext(), EditWordActivity.class);
+                intent.putExtra("index", i);
+                startActivity(intent);
+                return true;
+            }
+        });
         list.setAdapter(new ArrayAdapter<Word>(this, android.R.layout.simple_selectable_list_item, MainActivity.words));
     }
 }

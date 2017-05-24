@@ -38,9 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         //updateWords();
         words = new LinkedList<Word>();
+        words.add(new Word("Chair", "Krzesło"));
 
-        RelativeLayout l = (RelativeLayout)findViewById(R.id.layout);
-        changeFont(l);
     }
 
     //zajebista funkcja, przechodzi po wszystkich widokach jak po drzewie i zmienia kolor tekstu. A, i okazuje się że prawie wszystko w androidzie dziedziczy po TextView, nawet Button

@@ -33,7 +33,7 @@ public class AddWordActivity extends AppCompatActivity
             eng.setText("");
             pol.setText("");
 
-            Toast.makeText(this, "Dodano!", Toast.LENGTH_SHORT);
+            Toast.makeText(this, "Dodano!", Toast.LENGTH_SHORT).show();
         }
     }
 
