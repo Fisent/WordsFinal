@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ public class WordViewActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_view);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        //MenuInflater inflater = new MenuInflater(this).inflate(R.menu.menu_word_view);
 
         setLabels();
     }

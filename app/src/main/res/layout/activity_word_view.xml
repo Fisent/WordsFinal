@@ -17,6 +17,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="58dp"
         android:text="@string/english_detail"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/colorLabel" />
 
     <TextView
@@ -28,6 +29,7 @@
         android:layout_below="@+id/textView"
         android:layout_marginTop="94dp"
         android:text="@string/polish_detail"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/colorLabel" />
 
     <TextView
@@ -39,6 +41,7 @@
         android:layout_below="@+id/textView2"
         android:layout_marginTop="97dp"
         android:text="@string/category_detail"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/colorLabel" />
 
     <TextView

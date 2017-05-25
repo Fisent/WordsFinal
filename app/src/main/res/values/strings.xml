@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WordsFinal</string>
+    <string name="app_name">Słówka</string>
     <string name="list_button">Lista słów</string>
     <string name="add_button">Dodaj słowo</string>
     <string name="game_button">Gra</string>
@@ -8,4 +8,5 @@
     <string name="category_detail">Kategoria:</string>
     <string name="add_to_base_button">Dodaj!</string>
     <string name="edit">Edytuj</string>
+    <string name="delete">Usuń</string>
 </resources>

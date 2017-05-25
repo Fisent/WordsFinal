@@ -42,7 +42,8 @@
         android:layout_alignTop="@+id/english_edit_text"
         android:layout_toLeftOf="@+id/english_edit_text"
         android:layout_toStartOf="@+id/english_edit_text"
-        android:text="@string/english_detail"/>
+        android:text="@string/english_detail"
+        android:textColor="@color/colorLabel" />
 
     <TextView
         android:id="@+id/textView5"
@@ -51,7 +52,8 @@
         android:layout_alignTop="@+id/polish_edit_text"
         android:layout_toLeftOf="@+id/polish_edit_text"
         android:layout_toStartOf="@+id/polish_edit_text"
-        android:text="@string/polish_detail"/>
+        android:text="@string/polish_detail"
+        android:textColor="@color/colorLabel" />
 
     <Button
         android:id="@+id/button2"

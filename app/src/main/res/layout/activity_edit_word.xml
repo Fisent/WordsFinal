@@ -11,28 +11,31 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/english_detail"
         android:layout_alignTop="@+id/english_edit_text"
+        android:layout_toLeftOf="@+id/english_edit_text"
         android:layout_toStartOf="@+id/english_edit_text"
-        android:layout_toLeftOf="@+id/english_edit_text"/>
+        android:text="@string/english_detail"
+        android:textColor="@color/colorLabel" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/polish_detail"
         android:layout_alignTop="@+id/polish_edit_text"
         android:layout_toLeftOf="@+id/polish_edit_text"
-        android:layout_toStartOf="@+id/polish_edit_text"/>
+        android:layout_toStartOf="@+id/polish_edit_text"
+        android:text="@string/polish_detail"
+        android:textColor="@color/colorLabel" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/category_detail"
         android:layout_alignTop="@+id/category_edit_text"
         android:layout_toLeftOf="@+id/category_edit_text"
-        android:layout_toStartOf="@+id/category_edit_text"/>
+        android:layout_toStartOf="@+id/category_edit_text"
+        android:text="@string/category_detail"
+        android:textColor="@color/colorLabel" />
 
     <EditText
         android:id="@+id/english_edit_text"
