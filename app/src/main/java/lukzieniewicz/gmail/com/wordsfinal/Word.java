@@ -1,15 +1,19 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
+import java.io.Serializable;
+
 /**
  * Created by Fisent on 17.05.2017.
  */
 
-public class Word {
+public class Word implements Serializable{
     private String english;
     private String polish;
+    private int level;
     private String category;
 
     public Word(String eng, String pol){
+        level = -2;
         english = eng;
         polish = pol;
     }
@@ -40,7 +44,17 @@ public class Word {
         return category;
     }
 
+    public int getLevel() { return level; }
+
     public String toString(){
-        return english + " - " + polish + "(" + category + ")";
+        return english + " (" + level + ")";
+    }
+
+    public void levelUp(){
+        level++;
+    }
+
+    public void levelDown(){
+        level--;
     }
 }

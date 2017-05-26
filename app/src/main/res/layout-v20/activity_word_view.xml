@@ -107,5 +107,4 @@
         android:background="@color/down_button"
         android:onClick="onDownClick"
         android:text="-" />
-
 </RelativeLayout>

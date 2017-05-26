@@ -35,7 +35,8 @@
         android:layout_toLeftOf="@+id/category_edit_text"
         android:layout_toStartOf="@+id/category_edit_text"
         android:text="@string/category_detail"
-        android:textColor="@color/colorLabel" />
+        android:textColor="@color/colorLabel"
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/english_edit_text"
@@ -71,5 +72,6 @@
         android:layout_marginTop="69dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"/>
+        android:text="Name"
+        android:visibility="invisible" />
 </RelativeLayout>

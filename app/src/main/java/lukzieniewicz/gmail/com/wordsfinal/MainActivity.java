@@ -25,7 +25,6 @@ import java.util.List;
 public class MainActivity extends Activity
 {
 
-    public static LinkedList<Word> words;
     private static boolean changed = true;
 
     @Override
@@ -39,8 +38,7 @@ public class MainActivity extends Activity
         myRef.setValue("Hello, World!");
 
         //updateWords();
-        words = new LinkedList<Word>();
-        words.add(new Word("Chair", "Krzesło"));
+
 
     }
 
@@ -66,47 +64,5 @@ public class MainActivity extends Activity
         catch (Exception e){
             e.printStackTrace();
         }
-    }
-
-
-    @Override
-    public void onResume(){
-        super.onResume();
-        //updateWords();
-    }
-
-    // connect to firebase and fetch data there
-    public void updateWords(){
-        if(changed) {
-            //tutaj będzie połączenie z bazą
-            words = new LinkedList<Word>();
-            addWord(new Word("chair", "krzeslo"));
-        }
-        changed = false;
-
-    }
-
-    public static void addWord(Word w){
-        words.add(w);
-        changed = true;
-    }
-
-    public void onAddWordClick(View view){
-        Intent i = new Intent(this, AddWordActivity.class);
-        System.out.println("dupa word");
-        startActivity(i);
-    }
-
-    public void onListClick(View view){
-        Intent i = new Intent(this, ListActivity.class);
-        System.out.println("dupa list");
-        startActivity(i);
-    }
-
-    //temporary
-    public void onWordClick(View view){
-        Intent i = new Intent(this, WordViewActivity.class);
-        i.putExtra("number",0);
-        startActivity(i);
     }
 }

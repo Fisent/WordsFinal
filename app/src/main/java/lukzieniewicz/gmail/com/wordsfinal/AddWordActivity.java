@@ -29,7 +29,7 @@ public class AddWordActivity extends Activity
         if(true){
             Word w = new Word(eng.getText().toString(), pol.getText().toString());
 
-            MainActivity.addWord(w);
+            ListActivity.words.add(w);
 
             eng.setText("");
             pol.setText("");

@@ -6,4 +6,6 @@
     <color name="colorBackground">#fffce6</color>
     <color name="button">#8f8f8f</color>
     <color name="colorLabel">#818181</color>
+    <color name="up_button">#b2ff59</color>
+    <color name="down_button">#e57373</color>
 </resources>
