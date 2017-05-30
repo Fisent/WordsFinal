@@ -13,4 +13,5 @@
     <string name="delete_all_warning">Uwaga! Usuniesz wszystkie zapisane słówka!</string>
     <string name="confirm">Potwierdzam</string>
     <string name="level_label">Poziom: </string>
+    <string name="save_button">Zapisz!</string>
 </resources>

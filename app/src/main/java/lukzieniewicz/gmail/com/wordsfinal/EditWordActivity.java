@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public class EditWordActivity extends Activity
 {
@@ -41,5 +44,21 @@ public class EditWordActivity extends Activity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onSaveClick(View view){
+        EditText eng = (EditText) findViewById(R.id.english_edit_text);
+        EditText pol = (EditText) findViewById(R.id.polish_edit_text);
+
+        if(!pol.getText().toString().equals("") && !eng.getText().toString().equals("")){
+            String e = eng.getText().toString();
+            String p = pol.getText().toString();
+
+            current.setEnglish(e);
+            current.setPolish(p);
+
+            Toast.makeText(this, "Zmieniono!", Toast.LENGTH_SHORT).show();
+            onBackPressed();
+        }
     }
 }
