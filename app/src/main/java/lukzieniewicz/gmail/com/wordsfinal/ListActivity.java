@@ -2,18 +2,13 @@ package lukzieniewicz.gmail.com.wordsfinal;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -21,10 +16,13 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.LinkedList;
 
+import lukzieniewicz.gmail.com.wordsfinal.JavaClasses.Word;
+
 public class ListActivity extends Activity
 {
 
     public static LinkedList<Word> words;
+    public static LinkedList<String> categories;
 
     private ArrayAdapter adapter;
 
@@ -39,19 +37,29 @@ public class ListActivity extends Activity
     protected void onStart(){
         super.onStart();
 
-        if(words == null){
+        if(words == null || categories == null){
             boolean b = load();
             if(!b){
-                System.out.println("kurwa");
                 words = new LinkedList<Word>();
+                categories = new LinkedList<String>();
             }
         }
+
+        //debug
+        categories.add("pierwsza kategoria");
+        categories.add("druga kategoria");
 
         save();
 
         setList();
-
     }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        save();
+    }
+
 
     @Override
     public boolean onCreatePanelMenu(int featureId, Menu menu) {
@@ -67,8 +75,13 @@ public class ListActivity extends Activity
                 startActivity(i);
                 return true;
             case R.id.delete_all_menu_item:
-                Intent intent = new Intent(this, DeleteAllActivity.class);
-                startActivity(intent);
+                Intent i2 = new Intent(this, DeleteAllActivity.class);
+                startActivity(i2);
+                return true;
+            case R.id.add_category_menu_item:
+                Intent i3 = new Intent(this, AddCategoryActivity.class);
+                startActivity(i3);
+                return true;
         }
         return super.onMenuItemSelected(featureId, item);
     }
@@ -117,6 +130,7 @@ public class ListActivity extends Activity
             FileOutputStream fos = this.openFileOutput("words_save", this.MODE_PRIVATE);
             ObjectOutputStream os = new ObjectOutputStream(fos);
             os.writeObject(words);
+            os.writeObject(categories);
             os.close();
             fos.close();
         }
@@ -132,6 +146,7 @@ public class ListActivity extends Activity
             FileInputStream fis = this.openFileInput("words_save");
             ObjectInputStream is = new ObjectInputStream(fis);
             words = (LinkedList<Word>) is.readObject();
+            categories = (LinkedList<String>) is.readObject();
             is.close();
             fis.close();
         }

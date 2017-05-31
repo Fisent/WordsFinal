@@ -64,4 +64,25 @@
         android:layout_alignParentRight="true"
         android:onClick="onAddClick"
         android:text="@string/add_to_base_button"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/polish_edit_text"
+        android:layout_marginTop="47dp"
+        android:layout_alignLeft="@+id/polish_edit_text"
+        android:layout_alignStart="@+id/polish_edit_text"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/spinner"
+        android:text="@string/category_detail"
+        android:textColor="@color/colorLabel"/>
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package lukzieniewicz.gmail.com.wordsfinal;
+package lukzieniewicz.gmail.com.wordsfinal.JavaClasses;
 
 import java.io.Serializable;
 

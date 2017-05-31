@@ -25,25 +25,25 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="94dp"
+        android:layout_marginTop="61dp"
         android:text="@string/polish_detail"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/colorLabel" />
+        android:textColor="@color/colorLabel"
+        android:layout_below="@+id/english_detail_label"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="97dp"
         android:text="@string/level_label"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/colorLabel" />
+        android:textColor="@color/colorLabel"
+        android:layout_below="@+id/polish_detail_label"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="51dp"/>
 
     <TextView
         android:id="@+id/english_detail_label"
@@ -108,4 +108,24 @@
         android:onClick="onDownClick"
         android:text="-" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/level_detail_label"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textColor="@color/colorLabel"/>
+
+    <TextView
+        android:id="@+id/category_detail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/english_detail_label"
+        android:layout_alignStart="@+id/english_detail_label"
+        android:layout_alignTop="@+id/textView13"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 </RelativeLayout>

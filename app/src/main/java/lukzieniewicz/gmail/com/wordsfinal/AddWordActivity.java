@@ -1,13 +1,15 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import lukzieniewicz.gmail.com.wordsfinal.JavaClasses.Word;
 
 public class AddWordActivity extends Activity
 {
@@ -19,15 +21,19 @@ public class AddWordActivity extends Activity
         setContentView(R.layout.activity_add_word);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
+        System.out.println("debugaaa: " + ListActivity.categories.toString());
 
+        Spinner spinner = (Spinner)findViewById(R.id.spinner);
+        spinner.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, ListActivity.categories));
     }
 
     public void onAddClick(View view){
         EditText eng = (EditText) findViewById(R.id.english_edit_text);
         EditText pol = (EditText) findViewById(R.id.polish_edit_text);
+        Spinner cat = (Spinner) findViewById(R.id.spinner);
 
         if(true){
-            Word w = new Word(eng.getText().toString(), pol.getText().toString());
+            Word w = new Word(eng.getText().toString(), pol.getText().toString(), (String) cat.getSelectedItem());
 
             ListActivity.words.add(w);
 
