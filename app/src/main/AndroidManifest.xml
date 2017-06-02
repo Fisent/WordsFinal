@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="lukzieniewicz.gmail.com.wordsfinal">
+    package="lukzieniewicz.gmail.com.wordsfinal">
 
     <application
         android:allowBackup="true"
@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Material">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".WordViewActivity"/>
-        <activity android:name=".AddWordActivity"/>
-        <activity android:name=".ListActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WordsClasses.WordViewActivity" />
+        <activity android:name=".WordsClasses.AddWordActivity" />
+        <activity android:name=".WordsClasses.ListActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditWordActivity"/>
-        <activity android:name=".DeleteAllActivity"/>
-        <activity android:name=".AddCategoryActivity">
-        </activity>
+        <activity android:name=".WordsClasses.EditWordActivity" />
+        <activity android:name=".DeleteAllActivity" />
+        <activity android:name=".CategoriesClasses.AddCategoryActivity" />
+        <activity android:name=".CategoriesClasses.CategoryListActivity" />
+        <activity android:name=".CategoriesClasses.CategoryViewActivity" />
+        <activity android:name=".CategoriesClasses.EditCategoryActivity"></activity>
     </application>
 
 </manifest>

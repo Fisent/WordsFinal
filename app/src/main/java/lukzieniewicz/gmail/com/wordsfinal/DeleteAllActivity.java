@@ -1,13 +1,12 @@
 package lukzieniewicz.gmail.com.wordsfinal;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
 
 import java.util.LinkedList;
+
+import lukzieniewicz.gmail.com.wordsfinal.WordsClasses.ListActivity;
 
 public class DeleteAllActivity extends Activity {
 

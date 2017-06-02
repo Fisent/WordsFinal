@@ -16,4 +16,5 @@
     <string name="save_button">Zapisz!</string>
     <string name="add_category">Dodaj kategorię</string>
     <string name="category_name">Nazwa kategorii: </string>
+    <string name="categories">Kategorie</string>
 </resources>

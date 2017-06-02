@@ -1,4 +1,4 @@
-package lukzieniewicz.gmail.com.wordsfinal;
+package lukzieniewicz.gmail.com.wordsfinal.WordsClasses;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,7 +16,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.LinkedList;
 
-import lukzieniewicz.gmail.com.wordsfinal.JavaClasses.Word;
+import lukzieniewicz.gmail.com.wordsfinal.CategoriesClasses.AddCategoryActivity;
+import lukzieniewicz.gmail.com.wordsfinal.CategoriesClasses.CategoryListActivity;
+import lukzieniewicz.gmail.com.wordsfinal.DeleteAllActivity;
+import lukzieniewicz.gmail.com.wordsfinal.R;
 
 public class ListActivity extends Activity
 {
@@ -44,10 +47,6 @@ public class ListActivity extends Activity
                 categories = new LinkedList<String>();
             }
         }
-
-        //debug
-        categories.add("pierwsza kategoria");
-        categories.add("druga kategoria");
 
         save();
 
@@ -78,8 +77,8 @@ public class ListActivity extends Activity
                 Intent i2 = new Intent(this, DeleteAllActivity.class);
                 startActivity(i2);
                 return true;
-            case R.id.add_category_menu_item:
-                Intent i3 = new Intent(this, AddCategoryActivity.class);
+            case R.id.category_menu_item:
+                Intent i3 = new Intent(this, CategoryListActivity.class);
                 startActivity(i3);
                 return true;
         }

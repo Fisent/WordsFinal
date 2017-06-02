@@ -1,4 +1,4 @@
-package lukzieniewicz.gmail.com.wordsfinal;
+package lukzieniewicz.gmail.com.wordsfinal.WordsClasses;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import lukzieniewicz.gmail.com.wordsfinal.JavaClasses.Word;
+import lukzieniewicz.gmail.com.wordsfinal.R;
 
 public class WordViewActivity extends Activity
 {

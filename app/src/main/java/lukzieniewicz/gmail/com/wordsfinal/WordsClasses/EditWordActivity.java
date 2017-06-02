@@ -1,4 +1,4 @@
-package lukzieniewicz.gmail.com.wordsfinal;
+package lukzieniewicz.gmail.com.wordsfinal.WordsClasses;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import lukzieniewicz.gmail.com.wordsfinal.JavaClasses.Word;
+import lukzieniewicz.gmail.com.wordsfinal.R;
 
 public class EditWordActivity extends Activity
 {
